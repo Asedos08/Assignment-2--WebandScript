@@ -1,11 +1,103 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+ <%- include('partials/header', { title: 'My Portfolio' }) %>
+    
+    <!-- Home/About Me Section -->
+    <section id="home" class="min-vh-100 d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1 class="display-4">Alamjeet Singh Dhaliwal</h1>
+                    <p class="lead">Large Network Infrastructure Configuring</p>
+                    <p>I enjoy configuring and building network infrastructures</p>
+                    <div class="mt-4">
+                        <a href="#projects" class="btn btn-primary me-2">View My Work</a>
+                        <a href="#contact" class="btn btn-outline-primary">Contact Me</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="/images/Myself.jpeg" alt="Myself" class="img-fluid rounded-circle">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">My Projects</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="/images/Network.jpeg" class="card-img-top" alt="Network">
+                        <div class="card-body">
+                            <h5 class="card-title">Large Network Infrastructure Configuring</h5>
+                            <p class="card-text">Configuring and building network infrastructures from given topologies</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="/images/FirstPortfolio.jpeg" class="card-img-top" alt="First Portfolio">
+                        <div class="card-body">
+                            <h5 class="card-title">First Portfolio</h5>
+                            <p class="card-text">First Portfolio built using HTML and CSS.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="/images/DNSPoison.jpeg" class="card-img-top" alt="DNSPoison">
+                        <div class="card-body">
+                            <h5 class="card-title">DNS Cache Poisoning</h5>
+                            <p class="card-text">Locally hosted modified website for malicious use in a controlled environment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Me</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h4>Contact Information</h4>
+                    <p><i class="fas fa-envelope me-2"></i> asedos2167@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> Ontario Tech University</p>
+                    
+                    <div class="mt-4">
+                        <h5>Follow Me</h5>
+                        <a href="https://github.com/Asedos08" class="text-dark me-3">
+                            <i class="fab fa-github fa-2x"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/alamjeet-singh-dhaliwal-107127329/" class="text-dark">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<%- include('partials/footer') %>
 </html>
