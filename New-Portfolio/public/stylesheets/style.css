@@ -1,8 +1,68 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
-a {
-  color: #00B7FF;
+#home {
+    background: linear-gradient(135deg, #eb6f1c 5%, #da18ef 95%);
+    color: white;
+    margin: 2rem auto;
+    padding: 3rem 2rem;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+}
+
+/* Hover effect for the home section, that changes the color */
+#home:hover {
+    background: linear-gradient(135deg, #da18ef 5%, #eb6f1c 95%);
+    transition: background 10s ease-in;
+    max-height: 100px;
+}
+
+#home h5 {
+    font: 575 1.25rem 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    padding-top: 25px;
+}
+
+/* Styling for paragraphs within the #home section for the paragraph*/
+#home p {
+    text-align: justify;
+}
+
+/* Styling for Title within the projects section */
+#projects h5 {
+    font: 575 1.5rem 'Helvetica Neue', sans-serif;
+}
+/* .Card mouse hover effect */
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+/*Padding so when you click on the Projects page, the tiltle won't be connected to the header. And styling*/
+#projects h2{
+    padding-top: 10px;
+    font: 575 1.90rem 'Helvetica Neue', sans-serif;
+}
+
+#projects p {
+    text-align: left;
+    padding-top: 02px;
+}
+
+/*Aligning the Card Title*/
+#projects .card-title3 {
+    padding-top: 85px;
+}
+
+#contact h2{
+    font: 575 1.90rem 'Helvetica Neue', sans-serif;
 }
