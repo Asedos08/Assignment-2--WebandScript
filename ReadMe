@@ -1,5 +1,10 @@
 Built using Bootstrap 5 and Font Awesome.
+
+Used Express and Express Generator to set up the project structure.
+
 References:
     Bootstrap Documentation: https://getbootstrap.com/
     Font Awesome: https://fontawesome.com/
-
+    Code Modifications: https://www.w3schools.com
+    Express Documentation: https://expressjs.com/
+    
