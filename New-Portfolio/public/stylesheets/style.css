@@ -2,6 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
+/* Styling for the home section that loks like a card */
 #home {
     background: linear-gradient(135deg, #eb6f1c 5%, #da18ef 95%);
     color: white;
@@ -19,6 +20,7 @@ body {
     max-height: 100px;
 }
 
+/* Styling for Title within the #home section to make it look more distinguished*/
 #home h5 {
     font: 575 1.25rem 'Helvetica Neue', sans-serif;
     font-style: italic;
@@ -34,15 +36,18 @@ body {
 #projects h5 {
     font: 575 1.5rem 'Helvetica Neue', sans-serif;
 }
+
 /* .Card mouse hover effect */
 .card {
     transition: transform 0.3s;
 }
 
+/* When mouse hovers over the card, it lifts slightly */
 .card:hover {
     transform: translateY(-5px);
 }
 
+/* Navbar brand font bold */
 .navbar-brand {
     font-weight: bold;
 }
@@ -53,6 +58,7 @@ body {
     font: 575 1.90rem 'Helvetica Neue', sans-serif;
 }
 
+/* Put a gap between the paragraph and title*/
 #projects p {
     text-align: left;
     padding-top: 02px;
@@ -63,6 +69,7 @@ body {
     padding-top: 85px;
 }
 
+/*Styling for Title within the contact section */
 #contact h2{
     font: 575 1.90rem 'Helvetica Neue', sans-serif;
 }
